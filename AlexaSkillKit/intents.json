@@ -1,0 +1,192 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "five gals",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "OrderingIntent",
+                    "slots": [
+                        {
+                            "name": "food",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "i want the {food}",
+                        "i want a {food}",
+                        "i want to order a {food}",
+                        "i want to order {food}",
+                        "can we get {food}",
+                        "can we order {food}",
+                        "{food}",
+                        "i want some {food}",
+                        "i will get {food}",
+                        "i will get a {food}",
+                        "i want {food}",
+                        "i would like a {food}"
+                    ]
+                },
+                {
+                    "name": "PlaceOrderIntent",
+                    "slots": [],
+                    "samples": [
+                        "order food",
+                        "i want to order something",
+                        "order take out",
+                        "order to go",
+                        "i want to order",
+                        "i want to place an order",
+                        "order"
+                    ]
+                },
+                {
+                    "name": "DoneOrderingIntent",
+                    "slots": [],
+                    "samples": [
+                        "i'm done with my order",
+                        "i don't need anything else",
+                        "that's all i want",
+                        "nah i'm done",
+                        "that's it"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SpecialOfDayIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's the special of the day",
+                        "special of the day",
+                        "the special",
+                        "what's the special"
+                    ]
+                },
+                {
+                    "name": "AddressIntent",
+                    "slots": [],
+                    "samples": [
+                        "what's your location",
+                        "where are you located",
+                        "what's your address",
+                        "what's the address"
+                    ]
+                },
+                {
+                    "name": "HoursIntent",
+                    "slots": [],
+                    "samples": [
+                        "the hours",
+                        "what's your hours"
+                    ]
+                },
+                {
+                    "name": "GetMenuIntent",
+                    "slots": [],
+                    "samples": [
+                        "what is on the menu",
+                        "menu",
+                        "what do you have",
+                        "what do you have on the menu",
+                        "what's on the menu"
+                    ]
+                },
+                {
+                    "name": "GetAllPizzaIntent",
+                    "slots": [],
+                    "samples": [
+                        "all pizzas",
+                        "what pizzas do you have"
+                    ]
+                },
+                {
+                    "name": "GetAllSideIntent",
+                    "slots": [],
+                    "samples": [
+                        "what sides do you have",
+                        "all sides"
+                    ]
+                },
+                {
+                    "name": "GetAllDrinkIntent",
+                    "slots": [],
+                    "samples": [
+                        "what drinks do you have",
+                        "all drinks"
+                    ]
+                },
+                {
+                    "name": "GetAllDessertIntent",
+                    "slots": [],
+                    "samples": [
+                        "what desserts do you have",
+                        "all desserts"
+                    ]
+                },
+                {
+                    "name": "GetFoodInfoIntent",
+                    "slots": [
+                        {
+                            "name": "food",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "what's on {food}",
+                        "what's on the {food} ",
+                        "what's on your {food}"
+                    ]
+                },
+                {
+                    "name": "GetFoodPriceIntent",
+                    "slots": [
+                        {
+                            "name": "food",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "{food} price",
+                        "what's the price for {food}",
+                        "what's the price for the {food}",
+                        "how much is the {food}",
+                        "how much is {food}"
+                    ]
+                },
+                {
+                    "name": "GetNameIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "AMAZON.Person"
+                        }
+                    ],
+                    "samples": [
+                        "I am {name}",
+                        "{name}",
+                        "my name is {name}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

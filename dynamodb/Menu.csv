@@ -1,0 +1,16 @@
+MenuID (N),Category (S),Description (S),MenuName (S),Price (N),WaitTime (N)
+0,Sides,Garlic butter and parmesan coated breadsticks with a side of marinara sauce,Breadsticks,6.75,10
+1,Sides,Authentic Italian caesar salad with a creamy caesar dressing,Caesar Salad,5.75,5
+2,Sides,"Freshly imported olives, feta cheese and cherry tomatoes with a light Greek dressing",Greek Salad,5.75,5
+3,Pizzas,Rich marinara sauce with fresh mozzarella cheese on our freshly made pizza dough,Cheese Pizza,8.75,15
+4,Pizzas,basic cheese pizza topped with premium pepperoni,Pepperoni Pizza,9.25,15
+5,Pizzas,"Olive oil and garlic sauce with sun-dried roasted tomatoes, fresh mozzarella, and basil",White Pizza,10.75,15
+6,Pizzas,"Marinara sauce with fresh mozzarella, sausage, pepperoni, and bacon",Meat Lovers,12.25,15
+7,Pizzas,"Marinara sauce with fresh mozzarella, olives, onions, bell peppers, and mushrooms",Veggie Pizza,10.25,15
+8,Dessert,Sweet donut sticks covered in cinnamon sugar and drizzled with icing,Cinnamon Sticks,5.75,10
+9,Drinks,Coke product soda drink,Coke,2,2
+10,Drinks,Coke product soda drink,Diet Coke,2,2
+11,Drinks,Coke product soda drink,Coke Zero,2,2
+12,Drinks,Coke product soda drink,Sprite,2,2
+13,Drinks,We imported our water from Japan...just kidding. You need a description for water? Seriously,Water,0.75,2
+14,Dessert,"Four delicious pastry shells filled with a semi-sweet mixture of ricotta cheese, sugar, egg yolks, and chocolate chips ",Mini Cannolis,4.75,10

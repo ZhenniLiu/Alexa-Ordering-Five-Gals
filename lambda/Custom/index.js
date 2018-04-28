@@ -1,5 +1,5 @@
 //Build by: Zhenni Liu
-//Purpose: New Media Capston Class
+//Purpose: New Media Capstone Class
 //Info: A skill that allows user to place an order with the set menu and display on the restaurant end
 
 'use strict';
