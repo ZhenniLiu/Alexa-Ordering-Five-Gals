@@ -1,0 +1,108 @@
+<head>
+    <link rel="stylesheet" href="default.css" >
+    <body>
+        <div class = "titleheading">
+            <img src="logo.png" alt="FiveGals Logo" style="width:400px;height:150px;">
+        </div>
+        <br>
+        <div id= "grid-container">
+            <div id = "1">
+                <h4>No order currently</h4>
+            </div>
+            <div id = "2">
+            </div>
+            <div id = "3">
+            </div>
+            <div id = "4">
+            </div>
+            <div id = "5">
+            </div>
+            <div id = "6">
+            </div>
+            <div id = "7">
+            </div>
+            <div id = "8">
+            </div>
+            <div id = "9">
+            </div>
+            <div id = "10">
+            </div>
+            <div id = "11">
+            </div>
+            <div id = "12">
+            </div>
+            <div id = "13">
+            </div>
+            <div id = "14">
+            </div>
+            <div id = "15">
+            </div>
+            <div id = "17">
+            </div>
+            <div id = "18">
+            </div>
+            <div id = "19">
+            </div>
+            <div id = "20">
+            </div>
+        </div>
+        <script>
+        function refresh() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "https://ac22qncww2.execute-api.us-east-1.amazonaws.com/product", true);
+            xhttp.send();
+            xhttp.addEventListener("readystatechange", processRequest, false);
+        function processRequest(e) {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+            var response = JSON.parse(xhttp.responseText);
+            sortArray(response.Items);
+        }
+        setTimeout(refresh, 3000);
+        }
+        }
+        refresh();
+        function sortArray(arr){
+            var orders;
+            var price;
+            var num;
+            var name;
+            var j = 0;
+            for(var i = arr.length-1; i >=0; i--) {
+                orders = arr[i].orderToShow;
+                price = arr[i].priceToShow;
+                num = arr[i].numToShow;
+                name = arr[i].nameToShow;
+                if(orders == null){
+                   // do nothing
+                    document.getElementById("grid-container").innerHTML = "<div id='order_display'>hello</div>";
+                }else{
+                    var temp = new Array();
+                    temp = orders.split(",");
+                    var idNum = j+1;
+                    var result = makeTableHTML(temp,price,num,idNum,name);
+                    j++;
+                    document.getElementById(idNum).innerHTML = result;
+                }
+            }
+        }
+        function reactFunction(idNum){
+            var div = document.getElementById(idNum);
+            div.style.background = "green";
+        }
+        function makeTableHTML(myArray,price,num,idNum,name) {
+            var tax = 1.07;
+            var taxPrice = (price*.07).toFixed(2);
+            var total = parseFloat(price)+parseFloat(taxPrice);
+            var result = "<button onclick='reactFunction("+idNum+")'>Done</button><table id= 'table'><tr><th>Order #"+num+"</th></tr><tr><th>Order Name: "+name+"</th></tr>";
+                for(var i=0; i<myArray.length-1; i++) {
+                    result += "<tr>";
+                    result += "<td>"+myArray[i]+"</td>";
+                    result += "</tr>";
+                }
+            result += "<tr><td>------------</td></tr><tr><td>Subtotal: $"+price.toFixed(2)+"</td></tr><tr><td>Sales Tax: $"+taxPrice+"</td></tr><tr><td>Total: $"+total.toFixed(2)+"</td></tr></table>";
+
+                return result;
+        }
+        </script>
+    </body>
+</head>
