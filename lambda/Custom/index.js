@@ -4,7 +4,7 @@
 
 'use strict';
 const Alexa = require('alexa-sdk');
-const APP_ID = 'amzn1.ask.skill.00a4c531-0254-49cc-b25a-28efadbfd1c6';
+const APP_ID = '';
 var AWS = require("aws-sdk");
 //Store all menu items to 2D array
 const docClient = new AWS.DynamoDB.DocumentClient();
